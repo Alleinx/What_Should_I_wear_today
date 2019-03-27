@@ -6,8 +6,6 @@
 //  Copyright © 2019 noObject. All rights reserved.
 //
 
-import Foundation
-
 // For testing
     var container = [Texture]()
 

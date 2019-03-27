@@ -6,7 +6,6 @@
 //  Copyright © 2019 noObject. All rights reserved.
 //
 
-import Foundation
 
 class Cotton: Texture {
     internal var _density: Int = 1550
