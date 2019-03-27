@@ -8,11 +8,11 @@
 
 import Foundation
 
-class Wool: Material {
-    internal var _density: Int = 1300
-    internal var _specialHeatCapacity: Int = 1360
+class Silk: Texture {
+    internal var _density: Int = 1320
+    internal var _specialHeatCapacity: Int = 1380
     internal var _thermalConductivity: Float = 0.053
-    internal var _textureName: String = "Wool"
+    internal var _textureName: String = "Silk"
     
     init() {}
     

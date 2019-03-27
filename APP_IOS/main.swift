@@ -9,7 +9,7 @@
 import Foundation
 
 // For testing
-    var container = [Material]()
+    var container = [Texture]()
 
     var wool = Wool()
     var cotton = Cotton()
@@ -28,6 +28,6 @@ import Foundation
         texture.displayTexture()
     }
 
-    var shirt = Cloth(ClothTexture: cotton, Clothwidth: 3.42)
+    var shirt = Cloth(clothTexture: cotton, clothWidth: 3.42)
     shirt.setLayer(newLayer: 1)
     shirt.displayClothInfo()

@@ -8,13 +8,14 @@
 
 import Foundation
 
-class Terital: Material {
-    internal var _density: Int = 1300
-    internal var _specialHeatCapacity: Int = 1340
-    internal var _thermalConductivity: Float = 0.084
-    internal var _textureName: String = "Terital"
+class Chinlon: Texture {
+    internal var _density: Int = 1150
+    internal var _specialHeatCapacity: Int = 2050
+    internal var _thermalConductivity: Float = 0.2905
+    internal var _textureName: String = "Chinlon"
     
     init() {}
+    
     
     func getSpecialHeatCapacity() -> Int {
         return _specialHeatCapacity

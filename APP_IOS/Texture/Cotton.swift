@@ -1,5 +1,5 @@
 //
-//  Wool.swift
+//  Cotton.swift
 //  Test
 //
 //  Created by noObject on 2019/3/27.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-class Silk: Material {
-    internal var _density: Int = 1320
-    internal var _specialHeatCapacity: Int = 1380
-    internal var _thermalConductivity: Float = 0.053
-    internal var _textureName: String = "Silk"
+class Cotton: Texture {
+    internal var _density: Int = 1550
+    internal var _specialHeatCapacity: Int = 1275
+    internal var _thermalConductivity: Float = 0.072
+    internal var _textureName: String = "Cotton"
     
     init() {}
     
@@ -34,9 +34,9 @@ class Silk: Material {
     
     func displayTexture() {
         print("Texture information:\n" +
-            "\tTexture type: \(_textureName).\n" +
-            "\tDensity: \(_density).\n" +
-            "\tSpecial heat capacity: \(_specialHeatCapacity).\n" +
-            "\tThermal conductivity: \(_thermalConductivity).\n")
+              "\tTexture type: \(_textureName).\n" +
+              "\tDensity: \(_density).\n" +
+              "\tSpecial heat capacity: \(_specialHeatCapacity).\n" +
+              "\tThermal conductivity: \(_thermalConductivity).\n")
     }
 }

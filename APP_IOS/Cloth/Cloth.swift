@@ -8,16 +8,16 @@
 import Foundation
 
 class Cloth {
-    private var _texture: Material
+    private var _texture: Texture
     private var _width: Float = 2.0     //millimeters
     private var _layer: Int = -1        //From body to outside
     
-    init(ClothTexture: Material, Clothwidth :Float) {
-        _texture = ClothTexture
-        _width = Clothwidth
+    init(clothTexture: Texture, clothWidth :Float) {
+        _texture = clothTexture
+        _width = clothWidth
     }
     
-    func getTexture() -> Material {
+    func getTexture() -> Texture {
         return _texture
     }
     
@@ -29,7 +29,7 @@ class Cloth {
         return _layer
     }
     
-    func setTexture(newTexture: Material){
+    func setTexture(newTexture: Texture){
         _texture = newTexture
     }
     

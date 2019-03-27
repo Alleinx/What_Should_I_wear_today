@@ -6,7 +6,7 @@
 //  Copyright © 2019 noObject. All rights reserved.
 //
 
-protocol Material {
+protocol Texture {
     var _textureName: String {get}          //(Material name)
     var _specialHeatCapacity: Int {get}     //(kg.c)
     var _thermalConductivity: Float {get}   //(m.c)
