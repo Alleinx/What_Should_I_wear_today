@@ -1,4 +1,4 @@
 # What Should I Wear Today
-Cloth wearing recommendation system.
+### Cloth wearing recommendation system.
 
-Comming Soon.
+### Platform: IOS, WeChat mini Program.
