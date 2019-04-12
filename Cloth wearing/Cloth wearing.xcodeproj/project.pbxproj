@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4282A3B225C57C60065F215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A3A225C57C60065F215 /* AppDelegate.swift */; };
+		F4282A3D225C57C60065F215 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A3C225C57C60065F215 /* ViewController.swift */; };
+		F4282A3F225C57C70065F215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4282A3E225C57C70065F215 /* Assets.xcassets */; };
+		F4282A42225C57C70065F215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4282A40225C57C70065F215 /* Main.storyboard */; };
+		F4282A4E225C59940065F215 /* Python.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A4A225C59940065F215 /* Python.swift */; };
+		F4282A4F225C59940065F215 /* PythonLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A4B225C59940065F215 /* PythonLibrary.swift */; };
+		F4282A50225C59940065F215 /* NumpyConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A4C225C59940065F215 /* NumpyConversion.swift */; };
+		F4282A51225C59940065F215 /* PythonLibrary+Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A4D225C59940065F215 /* PythonLibrary+Symbols.swift */; };
+		F43204AA2260EA6200FDB040 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049A2260EA6200FDB040 /* Person.swift */; };
+		F43204AB2260EA6200FDB040 /* CoatsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049C2260EA6200FDB040 /* CoatsContainer.swift */; };
+		F43204AC2260EA6200FDB040 /* Coat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049D2260EA6200FDB040 /* Coat.swift */; };
+		F43204AD2260EA6200FDB040 /* PantsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049E2260EA6200FDB040 /* PantsContainer.swift */; };
+		F43204AE2260EA6200FDB040 /* Pant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049F2260EA6200FDB040 /* Pant.swift */; };
+		F43204AF2260EA6200FDB040 /* Cloth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A02260EA6200FDB040 /* Cloth.swift */; };
+		F43204B02260EA6200FDB040 /* WeatherProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A22260EA6200FDB040 /* WeatherProxy.swift */; };
+		F43204B12260EA6200FDB040 /* Silk.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A42260EA6200FDB040 /* Silk.swift */; };
+		F43204B22260EA6200FDB040 /* Terital.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A52260EA6200FDB040 /* Terital.swift */; };
+		F43204B32260EA6200FDB040 /* Chinlon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A62260EA6200FDB040 /* Chinlon.swift */; };
+		F43204B42260EA6200FDB040 /* Cotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A72260EA6200FDB040 /* Cotton.swift */; };
+		F43204B52260EA6200FDB040 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A82260EA6200FDB040 /* Texture.swift */; };
+		F43204B62260EA6200FDB040 /* Wool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A92260EA6200FDB040 /* Wool.swift */; };
+		F43204B92260EBCE00FDB040 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204B82260EBCE00FDB040 /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F4282A37225C57C60065F215 /* Cloth wearing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cloth wearing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4282A3A225C57C60065F215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4282A3C225C57C60065F215 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4282A3E225C57C70065F215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4282A41225C57C70065F215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4282A43225C57C70065F215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4282A44225C57C70065F215 /* Cloth_wearing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cloth_wearing.entitlements; sourceTree = "<group>"; };
+		F4282A4A225C59940065F215 /* Python.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Python.swift; sourceTree = "<group>"; };
+		F4282A4B225C59940065F215 /* PythonLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PythonLibrary.swift; sourceTree = "<group>"; };
+		F4282A4C225C59940065F215 /* NumpyConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpyConversion.swift; sourceTree = "<group>"; };
+		F4282A4D225C59940065F215 /* PythonLibrary+Symbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PythonLibrary+Symbols.swift"; sourceTree = "<group>"; };
+		F432049A2260EA6200FDB040 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F432049C2260EA6200FDB040 /* CoatsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoatsContainer.swift; sourceTree = "<group>"; };
+		F432049D2260EA6200FDB040 /* Coat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coat.swift; sourceTree = "<group>"; };
+		F432049E2260EA6200FDB040 /* PantsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantsContainer.swift; sourceTree = "<group>"; };
+		F432049F2260EA6200FDB040 /* Pant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pant.swift; sourceTree = "<group>"; };
+		F43204A02260EA6200FDB040 /* Cloth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloth.swift; sourceTree = "<group>"; };
+		F43204A22260EA6200FDB040 /* WeatherProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherProxy.swift; sourceTree = "<group>"; };
+		F43204A42260EA6200FDB040 /* Silk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Silk.swift; sourceTree = "<group>"; };
+		F43204A52260EA6200FDB040 /* Terital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Terital.swift; sourceTree = "<group>"; };
+		F43204A62260EA6200FDB040 /* Chinlon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chinlon.swift; sourceTree = "<group>"; };
+		F43204A72260EA6200FDB040 /* Cotton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cotton.swift; sourceTree = "<group>"; };
+		F43204A82260EA6200FDB040 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		F43204A92260EA6200FDB040 /* Wool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wool.swift; sourceTree = "<group>"; };
+		F43204B82260EBCE00FDB040 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4282A34225C57C60065F215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4282A2E225C57C60065F215 = {
+			isa = PBXGroup;
+			children = (
+				F4282A39225C57C60065F215 /* Cloth wearing */,
+				F4282A38225C57C60065F215 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4282A38225C57C60065F215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4282A37225C57C60065F215 /* Cloth wearing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4282A39225C57C60065F215 /* Cloth wearing */ = {
+			isa = PBXGroup;
+			children = (
+				F43204B72260EB6000FDB040 /* Model */,
+				F432049B2260EA6200FDB040 /* Cloth */,
+				F43204992260EA6200FDB040 /* Person */,
+				F43204A32260EA6200FDB040 /* Texture */,
+				F43204A12260EA6200FDB040 /* Weather */,
+				F432048B2260E85D00FDB040 /* Support */,
+				F432048C2260E8A900FDB040 /* Python */,
+				F4282A3C225C57C60065F215 /* ViewController.swift */,
+				F4282A40225C57C70065F215 /* Main.storyboard */,
+				F4282A43225C57C70065F215 /* Info.plist */,
+			);
+			path = "Cloth wearing";
+			sourceTree = "<group>";
+		};
+		F432048B2260E85D00FDB040 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F4282A3A225C57C60065F215 /* AppDelegate.swift */,
+				F4282A3E225C57C70065F215 /* Assets.xcassets */,
+				F4282A44225C57C70065F215 /* Cloth_wearing.entitlements */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F432048C2260E8A900FDB040 /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				F4282A4C225C59940065F215 /* NumpyConversion.swift */,
+				F4282A4A225C59940065F215 /* Python.swift */,
+				F4282A4B225C59940065F215 /* PythonLibrary.swift */,
+				F4282A4D225C59940065F215 /* PythonLibrary+Symbols.swift */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
+		F43204992260EA6200FDB040 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				F432049A2260EA6200FDB040 /* Person.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		F432049B2260EA6200FDB040 /* Cloth */ = {
+			isa = PBXGroup;
+			children = (
+				F432049C2260EA6200FDB040 /* CoatsContainer.swift */,
+				F432049D2260EA6200FDB040 /* Coat.swift */,
+				F432049E2260EA6200FDB040 /* PantsContainer.swift */,
+				F432049F2260EA6200FDB040 /* Pant.swift */,
+				F43204A02260EA6200FDB040 /* Cloth.swift */,
+			);
+			path = Cloth;
+			sourceTree = "<group>";
+		};
+		F43204A12260EA6200FDB040 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				F43204A22260EA6200FDB040 /* WeatherProxy.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		F43204A32260EA6200FDB040 /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				F43204A42260EA6200FDB040 /* Silk.swift */,
+				F43204A52260EA6200FDB040 /* Terital.swift */,
+				F43204A62260EA6200FDB040 /* Chinlon.swift */,
+				F43204A72260EA6200FDB040 /* Cotton.swift */,
+				F43204A82260EA6200FDB040 /* Texture.swift */,
+				F43204A92260EA6200FDB040 /* Wool.swift */,
+			);
+			path = Texture;
+			sourceTree = "<group>";
+		};
+		F43204B72260EB6000FDB040 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F43204B82260EBCE00FDB040 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4282A36225C57C60065F215 /* Cloth wearing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4282A47225C57C70065F215 /* Build configuration list for PBXNativeTarget "Cloth wearing" */;
+			buildPhases = (
+				F4282A33225C57C60065F215 /* Sources */,
+				F4282A34225C57C60065F215 /* Frameworks */,
+				F4282A35225C57C60065F215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cloth wearing";
+			productName = "Cloth wearing";
+			productReference = F4282A37225C57C60065F215 /* Cloth wearing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4282A2F225C57C60065F215 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = noObject;
+				TargetAttributes = {
+					F4282A36225C57C60065F215 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = F4282A32225C57C60065F215 /* Build configuration list for PBXProject "Cloth wearing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4282A2E225C57C60065F215;
+			productRefGroup = F4282A38225C57C60065F215 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4282A36225C57C60065F215 /* Cloth wearing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4282A35225C57C60065F215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4282A3F225C57C70065F215 /* Assets.xcassets in Resources */,
+				F4282A42225C57C70065F215 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4282A33225C57C60065F215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43204AF2260EA6200FDB040 /* Cloth.swift in Sources */,
+				F43204B52260EA6200FDB040 /* Texture.swift in Sources */,
+				F43204B62260EA6200FDB040 /* Wool.swift in Sources */,
+				F43204B42260EA6200FDB040 /* Cotton.swift in Sources */,
+				F4282A3D225C57C60065F215 /* ViewController.swift in Sources */,
+				F43204B22260EA6200FDB040 /* Terital.swift in Sources */,
+				F43204AE2260EA6200FDB040 /* Pant.swift in Sources */,
+				F4282A51225C59940065F215 /* PythonLibrary+Symbols.swift in Sources */,
+				F43204B32260EA6200FDB040 /* Chinlon.swift in Sources */,
+				F43204AB2260EA6200FDB040 /* CoatsContainer.swift in Sources */,
+				F4282A50225C59940065F215 /* NumpyConversion.swift in Sources */,
+				F43204B12260EA6200FDB040 /* Silk.swift in Sources */,
+				F43204B02260EA6200FDB040 /* WeatherProxy.swift in Sources */,
+				F4282A4F225C59940065F215 /* PythonLibrary.swift in Sources */,
+				F43204AA2260EA6200FDB040 /* Person.swift in Sources */,
+				F43204B92260EBCE00FDB040 /* Model.swift in Sources */,
+				F43204AD2260EA6200FDB040 /* PantsContainer.swift in Sources */,
+				F4282A4E225C59940065F215 /* Python.swift in Sources */,
+				F4282A3B225C57C60065F215 /* AppDelegate.swift in Sources */,
+				F43204AC2260EA6200FDB040 /* Coat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4282A40225C57C70065F215 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4282A41225C57C70065F215 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4282A45225C57C70065F215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4282A46225C57C70065F215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F4282A48225C57C70065F215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cloth wearing/Cloth_wearing.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cloth wearing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jerry.Cloth-wearing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F4282A49225C57C70065F215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Cloth wearing/Cloth_wearing.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Cloth wearing/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Jerry.Cloth-wearing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4282A32225C57C60065F215 /* Build configuration list for PBXProject "Cloth wearing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4282A45225C57C70065F215 /* Debug */,
+				F4282A46225C57C70065F215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4282A47225C57C70065F215 /* Build configuration list for PBXNativeTarget "Cloth wearing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4282A48225C57C70065F215 /* Debug */,
+				F4282A49225C57C70065F215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4282A2F225C57C60065F215 /* Project object */;
+}
