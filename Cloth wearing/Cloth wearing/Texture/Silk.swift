@@ -6,10 +6,10 @@
 
 
 class Silk: Texture {
-    internal var _density: Int = 1320
-    internal var _specialHeatCapacity: Int = 1380
-    internal var _thermalConductivity: Float = 0.053
-    internal var _textureName: String = "Silk"
+    var _density: Int = 1320
+    var _specialHeatCapacity: Int = 1380
+    var _thermalConductivity: Float = 0.053
+    var _textureName: String = "Silk"
     
     init() {}
     

@@ -10,40 +10,21 @@ import Cocoa
 import Python
 
 class ViewController: NSViewController {
-
-    @IBOutlet weak var displayPatten: NSTextField!
+    private var serverProxy = Proxy()
+    private var person = Person(age: 20, height: 180)
     
-    @IBAction func clickButton(_ sender: NSButtonCell) {
-        
-        let sys = Python.import("sys")
-        
-        displayPatten.stringValue = "\(sys.version)"
+    lazy private var weatherPanel = WeatherProxy(place: "zhuhai", proxy: serverProxy)
+    lazy private var model = Model(proxy: serverProxy)
+
+    
+    @IBAction func checkEnough(_ sender: NSButton) {
+        print(model.calculate())
+        weatherPanel.updateWeatherData() //
+        print("average temp: \(weatherPanel.getTemperature())")
     }
     
-    @IBAction func performUnitTest(_ sender: NSButton) {
-        
-        let wool = Wool()
-        let cotton = Cotton()
-        let silk = Silk()
-        let chinlon = Chinlon()
-        let terital = Terital()
-        
-        cotton.displayTexture()
-        silk.displayTexture()
-        chinlon.displayTexture()
-        terital.displayTexture()
-        
-        let shirt = Coat(clothTexture: wool, body_width: 2, arm_width: 2)
-        shirt.displayClothInfo()
-        
-        shirt.setArmWidth(newWidth: 3)
-        shirt.setBodyWidth(newWidth: 3)
-        shirt.setTexture(newTexture: cotton)
-        
-        print(shirt.getArmWidth())
-        print(shirt.getBodyWidth())
-        print(shirt.getTexture())
-        
+    @IBAction func updateWeather(_ sender: NSButton) {
+        weatherPanel.updateWeatherData()
     }
     
 }

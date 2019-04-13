@@ -6,10 +6,10 @@
 
 
 class Cotton: Texture {
-    internal var _density: Int = 1550
-    internal var _specialHeatCapacity: Int = 1275
-    internal var _thermalConductivity: Float = 0.072
-    internal var _textureName: String = "Cotton"
+    var _density: Int = 1550
+    var _specialHeatCapacity: Int = 1275
+    var _thermalConductivity: Float = 0.072
+    var _textureName: String = "Cotton"
     
     init() {}
     

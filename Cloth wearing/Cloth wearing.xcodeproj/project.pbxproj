@@ -16,9 +16,7 @@
 		F4282A50225C59940065F215 /* NumpyConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A4C225C59940065F215 /* NumpyConversion.swift */; };
 		F4282A51225C59940065F215 /* PythonLibrary+Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A4D225C59940065F215 /* PythonLibrary+Symbols.swift */; };
 		F43204AA2260EA6200FDB040 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049A2260EA6200FDB040 /* Person.swift */; };
-		F43204AB2260EA6200FDB040 /* CoatsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049C2260EA6200FDB040 /* CoatsContainer.swift */; };
 		F43204AC2260EA6200FDB040 /* Coat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049D2260EA6200FDB040 /* Coat.swift */; };
-		F43204AD2260EA6200FDB040 /* PantsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049E2260EA6200FDB040 /* PantsContainer.swift */; };
 		F43204AE2260EA6200FDB040 /* Pant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F432049F2260EA6200FDB040 /* Pant.swift */; };
 		F43204AF2260EA6200FDB040 /* Cloth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A02260EA6200FDB040 /* Cloth.swift */; };
 		F43204B02260EA6200FDB040 /* WeatherProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A22260EA6200FDB040 /* WeatherProxy.swift */; };
@@ -29,6 +27,8 @@
 		F43204B52260EA6200FDB040 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A82260EA6200FDB040 /* Texture.swift */; };
 		F43204B62260EA6200FDB040 /* Wool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A92260EA6200FDB040 /* Wool.swift */; };
 		F43204B92260EBCE00FDB040 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204B82260EBCE00FDB040 /* Model.swift */; };
+		F45EB748226215C100ECA93E /* server.py in Resources */ = {isa = PBXBuildFile; fileRef = F45EB747226215C100ECA93E /* server.py */; };
+		F45EB74A22622BD300ECA93E /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EB74922622BD300ECA93E /* Proxy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,9 +44,7 @@
 		F4282A4C225C59940065F215 /* NumpyConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpyConversion.swift; sourceTree = "<group>"; };
 		F4282A4D225C59940065F215 /* PythonLibrary+Symbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PythonLibrary+Symbols.swift"; sourceTree = "<group>"; };
 		F432049A2260EA6200FDB040 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		F432049C2260EA6200FDB040 /* CoatsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoatsContainer.swift; sourceTree = "<group>"; };
 		F432049D2260EA6200FDB040 /* Coat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coat.swift; sourceTree = "<group>"; };
-		F432049E2260EA6200FDB040 /* PantsContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PantsContainer.swift; sourceTree = "<group>"; };
 		F432049F2260EA6200FDB040 /* Pant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pant.swift; sourceTree = "<group>"; };
 		F43204A02260EA6200FDB040 /* Cloth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloth.swift; sourceTree = "<group>"; };
 		F43204A22260EA6200FDB040 /* WeatherProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherProxy.swift; sourceTree = "<group>"; };
@@ -57,6 +55,8 @@
 		F43204A82260EA6200FDB040 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
 		F43204A92260EA6200FDB040 /* Wool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wool.swift; sourceTree = "<group>"; };
 		F43204B82260EBCE00FDB040 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F45EB747226215C100ECA93E /* server.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = server.py; sourceTree = "<group>"; };
+		F45EB74922622BD300ECA93E /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +89,7 @@
 		F4282A39225C57C60065F215 /* Cloth wearing */ = {
 			isa = PBXGroup;
 			children = (
+				F45EB74B22622EFD00ECA93E /* Proxy */,
 				F43204B72260EB6000FDB040 /* Model */,
 				F432049B2260EA6200FDB040 /* Cloth */,
 				F43204992260EA6200FDB040 /* Person */,
@@ -135,9 +136,7 @@
 		F432049B2260EA6200FDB040 /* Cloth */ = {
 			isa = PBXGroup;
 			children = (
-				F432049C2260EA6200FDB040 /* CoatsContainer.swift */,
 				F432049D2260EA6200FDB040 /* Coat.swift */,
-				F432049E2260EA6200FDB040 /* PantsContainer.swift */,
 				F432049F2260EA6200FDB040 /* Pant.swift */,
 				F43204A02260EA6200FDB040 /* Cloth.swift */,
 			);
@@ -171,6 +170,15 @@
 				F43204B82260EBCE00FDB040 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F45EB74B22622EFD00ECA93E /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				F45EB747226215C100ECA93E /* server.py */,
+				F45EB74922622BD300ECA93E /* Proxy.swift */,
+			);
+			path = Proxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4282A3F225C57C70065F215 /* Assets.xcassets in Resources */,
+				F45EB748226215C100ECA93E /* server.py in Resources */,
 				F4282A42225C57C70065F215 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,19 +256,18 @@
 				F43204B52260EA6200FDB040 /* Texture.swift in Sources */,
 				F43204B62260EA6200FDB040 /* Wool.swift in Sources */,
 				F43204B42260EA6200FDB040 /* Cotton.swift in Sources */,
+				F45EB74A22622BD300ECA93E /* Proxy.swift in Sources */,
 				F4282A3D225C57C60065F215 /* ViewController.swift in Sources */,
 				F43204B22260EA6200FDB040 /* Terital.swift in Sources */,
 				F43204AE2260EA6200FDB040 /* Pant.swift in Sources */,
 				F4282A51225C59940065F215 /* PythonLibrary+Symbols.swift in Sources */,
 				F43204B32260EA6200FDB040 /* Chinlon.swift in Sources */,
-				F43204AB2260EA6200FDB040 /* CoatsContainer.swift in Sources */,
 				F4282A50225C59940065F215 /* NumpyConversion.swift in Sources */,
 				F43204B12260EA6200FDB040 /* Silk.swift in Sources */,
 				F43204B02260EA6200FDB040 /* WeatherProxy.swift in Sources */,
 				F4282A4F225C59940065F215 /* PythonLibrary.swift in Sources */,
 				F43204AA2260EA6200FDB040 /* Person.swift in Sources */,
 				F43204B92260EBCE00FDB040 /* Model.swift in Sources */,
-				F43204AD2260EA6200FDB040 /* PantsContainer.swift in Sources */,
 				F4282A4E225C59940065F215 /* Python.swift in Sources */,
 				F4282A3B225C57C60065F215 /* AppDelegate.swift in Sources */,
 				F43204AC2260EA6200FDB040 /* Coat.swift in Sources */,

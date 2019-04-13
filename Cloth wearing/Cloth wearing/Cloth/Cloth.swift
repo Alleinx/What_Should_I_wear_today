@@ -6,14 +6,15 @@
 
 class Cloth {
     private var _texture: Texture
-    private var _bodyWidth: Float = 2.0     //millimeters
-//  private photo
-    private var _armWidth : Float = 2.0
+    private var _bodyWidth: Float    //millimeters
+    private var _name : String
+    private var _armWidth : Float
     
-    init(clothTexture: Texture, body_width : Float, arm_width : Float) {
+    init(clothTexture: Texture, name : String, body_width : Float, arm_width : Float) {
         _texture = clothTexture
         _bodyWidth = body_width
         _armWidth = arm_width
+        self._name = name
     }
     
     func getTexture() -> Texture {
@@ -28,6 +29,10 @@ class Cloth {
         return _armWidth
     }
     
+    func getName() ->String {
+        return _name
+    }
+    
     func setTexture(newTexture: Texture) {
         _texture = newTexture
     }
@@ -38,6 +43,10 @@ class Cloth {
     
     func setArmWidth(newWidth : Float) {
         _armWidth = newWidth
+    }
+    
+    func setName(newName: String) {
+        self._name = newName
     }
     
     func displayClothInfo() {

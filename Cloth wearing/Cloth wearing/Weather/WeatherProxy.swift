@@ -9,9 +9,11 @@ class WeatherProxy {
     private var _wind_speed : Float = 0
     private var _temperature : Float = 0
     private var _place : String
+    private var proxy : Proxy
     
-    init(place: String) {
-        _place = place
+    init(place: String, proxy : Proxy) {
+        self._place = place
+        self.proxy = proxy
     }
     
     func getHumidity() -> Float {
@@ -30,9 +32,7 @@ class WeatherProxy {
         return _place
     }
     
-    private func updateWeatherData() {
-        //get Data from API of corresponding place
-        //Parse the json data
-        //update weather data
+    func updateWeatherData() {
+        _temperature = Float(proxy.get_service().get_average_temp())!
     }
 }

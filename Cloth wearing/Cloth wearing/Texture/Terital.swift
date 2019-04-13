@@ -6,10 +6,10 @@
 
 
 class Terital: Texture {
-    internal var _density: Int = 1300
-    internal var _specialHeatCapacity: Int = 1340
-    internal var _thermalConductivity: Float = 0.084
-    internal var _textureName: String = "Terital"
+    var _density: Int = 1300
+    var _specialHeatCapacity: Int = 1340
+    var _thermalConductivity: Float = 0.084
+    var _textureName: String = "Terital"
     
     init() {}
     
