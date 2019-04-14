@@ -33,8 +33,14 @@ with SimpleXMLRPCServer(('localhost', 8000), requestHandler = RequestHandler) as
         
         return sum(weather)/len(weather)
     
-
+    def getWearingResult(cloth_num, temperature, data):
+        print(cloth_num)
+        print(temperature)
+        print(data)
+        return temperature
+    
     server.register_function(add_function, 'add')
     server.register_function(get_average_temp, 'get_average_temp')
+    server.register_function(getWearingResult, 'getWearingResult')
     
     server.serve_forever()

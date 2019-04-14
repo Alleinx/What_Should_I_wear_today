@@ -14,6 +14,7 @@ class WeatherProxy {
     init(place: String, proxy : Proxy) {
         self._place = place
         self.proxy = proxy
+        self.updateWeatherData()
     }
     
     func getHumidity() -> Float {

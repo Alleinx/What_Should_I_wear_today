@@ -26,9 +26,9 @@
 		F43204B42260EA6200FDB040 /* Cotton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A72260EA6200FDB040 /* Cotton.swift */; };
 		F43204B52260EA6200FDB040 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A82260EA6200FDB040 /* Texture.swift */; };
 		F43204B62260EA6200FDB040 /* Wool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204A92260EA6200FDB040 /* Wool.swift */; };
-		F43204B92260EBCE00FDB040 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43204B82260EBCE00FDB040 /* Model.swift */; };
 		F45EB748226215C100ECA93E /* server.py in Resources */ = {isa = PBXBuildFile; fileRef = F45EB747226215C100ECA93E /* server.py */; };
 		F45EB74A22622BD300ECA93E /* Proxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EB74922622BD300ECA93E /* Proxy.swift */; };
+		F494BFC3226352C500C38212 /* Air.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494BFC2226352C500C38212 /* Air.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,9 +54,9 @@
 		F43204A72260EA6200FDB040 /* Cotton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cotton.swift; sourceTree = "<group>"; };
 		F43204A82260EA6200FDB040 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
 		F43204A92260EA6200FDB040 /* Wool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wool.swift; sourceTree = "<group>"; };
-		F43204B82260EBCE00FDB040 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F45EB747226215C100ECA93E /* server.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = server.py; sourceTree = "<group>"; };
 		F45EB74922622BD300ECA93E /* Proxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxy.swift; sourceTree = "<group>"; };
+		F494BFC2226352C500C38212 /* Air.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Air.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				F45EB74B22622EFD00ECA93E /* Proxy */,
-				F43204B72260EB6000FDB040 /* Model */,
 				F432049B2260EA6200FDB040 /* Cloth */,
 				F43204992260EA6200FDB040 /* Person */,
 				F43204A32260EA6200FDB040 /* Texture */,
@@ -159,17 +158,10 @@
 				F43204A62260EA6200FDB040 /* Chinlon.swift */,
 				F43204A72260EA6200FDB040 /* Cotton.swift */,
 				F43204A82260EA6200FDB040 /* Texture.swift */,
+				F494BFC2226352C500C38212 /* Air.swift */,
 				F43204A92260EA6200FDB040 /* Wool.swift */,
 			);
 			path = Texture;
-			sourceTree = "<group>";
-		};
-		F43204B72260EB6000FDB040 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F43204B82260EBCE00FDB040 /* Model.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F45EB74B22622EFD00ECA93E /* Proxy */ = {
@@ -260,6 +252,7 @@
 				F4282A3D225C57C60065F215 /* ViewController.swift in Sources */,
 				F43204B22260EA6200FDB040 /* Terital.swift in Sources */,
 				F43204AE2260EA6200FDB040 /* Pant.swift in Sources */,
+				F494BFC3226352C500C38212 /* Air.swift in Sources */,
 				F4282A51225C59940065F215 /* PythonLibrary+Symbols.swift in Sources */,
 				F43204B32260EA6200FDB040 /* Chinlon.swift in Sources */,
 				F4282A50225C59940065F215 /* NumpyConversion.swift in Sources */,
@@ -267,7 +260,6 @@
 				F43204B02260EA6200FDB040 /* WeatherProxy.swift in Sources */,
 				F4282A4F225C59940065F215 /* PythonLibrary.swift in Sources */,
 				F43204AA2260EA6200FDB040 /* Person.swift in Sources */,
-				F43204B92260EBCE00FDB040 /* Model.swift in Sources */,
 				F4282A4E225C59940065F215 /* Python.swift in Sources */,
 				F4282A3B225C57C60065F215 /* AppDelegate.swift in Sources */,
 				F43204AC2260EA6200FDB040 /* Coat.swift in Sources */,
