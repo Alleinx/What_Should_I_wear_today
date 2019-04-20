@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F414AC632264DC9600DB5A1C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F414AC622264DC9600DB5A1C /* Model.swift */; };
 		F4282A3B225C57C60065F215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A3A225C57C60065F215 /* AppDelegate.swift */; };
 		F4282A3D225C57C60065F215 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4282A3C225C57C60065F215 /* ViewController.swift */; };
 		F4282A3F225C57C70065F215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4282A3E225C57C70065F215 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F414AC622264DC9600DB5A1C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F4282A37225C57C60065F215 /* Cloth wearing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cloth wearing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4282A3A225C57C60065F215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4282A3C225C57C60065F215 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F414AC642264DDB600DB5A1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F414AC622264DC9600DB5A1C /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4282A2E225C57C60065F215 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 		F4282A39225C57C60065F215 /* Cloth wearing */ = {
 			isa = PBXGroup;
 			children = (
+				F414AC642264DDB600DB5A1C /* Model */,
 				F45EB74B22622EFD00ECA93E /* Proxy */,
 				F432049B2260EA6200FDB040 /* Cloth */,
 				F43204992260EA6200FDB040 /* Person */,
@@ -259,6 +270,7 @@
 				F43204B12260EA6200FDB040 /* Silk.swift in Sources */,
 				F43204B02260EA6200FDB040 /* WeatherProxy.swift in Sources */,
 				F4282A4F225C59940065F215 /* PythonLibrary.swift in Sources */,
+				F414AC632264DC9600DB5A1C /* Model.swift in Sources */,
 				F43204AA2260EA6200FDB040 /* Person.swift in Sources */,
 				F4282A4E225C59940065F215 /* Python.swift in Sources */,
 				F4282A3B225C57C60065F215 /* AppDelegate.swift in Sources */,

@@ -721,6 +721,7 @@
                                             <menuItem title="Cotton" id="D45-ru-8ir"/>
                                             <menuItem title="Silk" id="Mu3-eS-GE3"/>
                                             <menuItem title="Wool" id="9bR-Va-3Nv"/>
+                                            <menuItem title="Chinlon" id="mfz-cR-FmA"/>
                                             <menuItem title="Terital" id="JeX-Ng-09i"/>
                                         </items>
                                     </menu>
@@ -738,6 +739,7 @@
                                             <menuItem title="Cotton" id="veV-6T-CsW"/>
                                             <menuItem title="Silk" id="orq-VI-mZp"/>
                                             <menuItem title="Wool" id="66l-9g-GUS"/>
+                                            <menuItem title="Chinlon" id="Cu3-zC-yRp"/>
                                             <menuItem title="Terital" id="kmP-bw-f2F"/>
                                         </items>
                                     </menu>
@@ -755,7 +757,8 @@
                                             <menuItem title="Cotton" id="laY-B1-Pat"/>
                                             <menuItem title="Silk" id="qlj-i6-AYv"/>
                                             <menuItem title="Wool" id="349-6a-pIS"/>
-                                            <menuItem title="Terital" id="Gvu-gw-tdm"/>
+                                            <menuItem title="Chinlon" id="Gvu-gw-tdm"/>
+                                            <menuItem title="Terital" id="8sq-lK-3tr"/>
                                         </items>
                                     </menu>
                                 </popUpButtonCell>

@@ -10,11 +10,11 @@ import Python
 class ViewController: NSViewController {
     private let clothNum = 3
     private let empty_thickness : Float = 0.001
-    private let judge_temperature_difference : Float = 1.0
-    //If body abs(body optimum temperature - model result) > this number, then it's not acceptable.
-    
+
     private var serverProxy = Proxy()
     private var person = Person(age: 20, height: 180)
+    
+    lazy private var model = Model(person: person)
     
     lazy private var weatherPanel = WeatherProxy(place: "zhuhai", proxy: serverProxy)
     
@@ -24,7 +24,6 @@ class ViewController: NSViewController {
     //Data sends to server
     
     private var textureList : [Texture] = [Air(), Air(), Air()] //store texture.
-    
     
     //UI components start below:
     @IBOutlet weak var thickness1: NSTextField!
@@ -37,7 +36,7 @@ class ViewController: NSViewController {
     
     private let alertPanel : NSAlert = NSAlert() //alert panel
     
-    //methods start bellow:
+    //methods start below:
     
     @IBAction func checkEnough(_ sender: NSButton) {
         
@@ -54,7 +53,6 @@ class ViewController: NSViewController {
             clothData[i][1] = Float(textureList[i].getSpecialHeatCapacity())
             clothData[i][2] = Float(textureList[i].getThermalConductivity())
             clothData[i][3] = thicknessList[i]
-            
         }
         
         let result = Float(serverProxy.get_service().getWearingResult(
@@ -62,7 +60,7 @@ class ViewController: NSViewController {
                 weatherPanel.getTemperature(),
                 clothData))!
         
-        display_info(information: judgeIfEnough(model_result: result))
+        display_info(information: model.judgeIfEnough(model_result: result))
     }
     
     
@@ -78,16 +76,6 @@ class ViewController: NSViewController {
         alertPanel.messageText = information
         alertPanel.alertStyle = NSAlert.Style.critical
         alertPanel.runModal()
-    }
-    
-    //judge whether wearing is enough
-    private func judgeIfEnough(model_result : Float) -> String {
-        
-        if fabsf(model_result-person.getBodyOptimum()) > judge_temperature_difference {
-            return "Not Enough!\nBody Optimum temperature: \(person.getBodyOptimum())\nModel result : \(model_result)"
-        }
-        
-        return "Good!\nBody Optimum temperature: \(person.getBodyOptimum())\nModel result : \(model_result)"
     }
     
     //Set the thickness of given cloth.
