@@ -39,70 +39,59 @@ with SimpleXMLRPCServer(('localhost', 8000), requestHandler=RequestHandler) as s
         if cloth_num != 3:
             return -1
 
-        h = 8.6125  # 空气交换系数
+        h = 8.6125  
         body_temperature = 37.5
-        # 分别对四种介质分割
-        
         m1 = 6
         m2 = 60
         m3 = 36
         m4 = 50
 
-        m = m1+m2+m3+m4  # 介质分割和
-        n = 5400  # 对时间分割
-        t = 5400  # 总时长
+        m = m1+m2+m3+m4  
+        n = 5400  
+        t = 5400  
 
-        # 四种材料厚度
         l1 = 0.001/1000
         l2 = data[2][3]/1000
         l3 = data[1][3]/1000
         l4 = data[0][3]/1000
 
-        # 3四种材料的热传导率
         lam_1 = 0.027
         lam_2 = data[2][2]
         lam_3 = data[1][2]
         lam_4 = data[0][2]
         
-        # 四种材料的密度
         de_1 = 1205
         de_2 = data[2][0]
         de_3 = data[1][0]
         de_4 = data[0][0]
         
         
-        # 四种材料的比热容
         c1 = 1010
         c2 = data[2][1]
         c3 = data[1][1]
         c4 = data[0][1]
         
-        # 计算热扩散率
-        a1 = lam_1/(c1*de_1)  # I层材料的热扩散率
-        a2 = lam_2/(c2*de_2)  # II层材料的热扩散率
-        a3 = lam_3/(c3*de_3)  # III层材料的热扩散率
-        a4 = lam_4/(c4*de_4)  # IV层材料的热扩散率
+        a1 = lam_1/(c1*de_1)  
+        a2 = lam_2/(c2*de_2)  
+        a3 = lam_3/(c3*de_3)  
+        a4 = lam_4/(c4*de_4)  
 
-        # 材料长度分割和时间步长分割求解
-        derta_x1 = l1/m1  # I层材料的分割长度
-        derta_x2 = l2/m2  # II层材料的分割长度
-        derta_x3 = l3/m3  # III层材料的分割长度
-        derta_x4 = l4/m4  # IV层材料的分割长度
-        derta_t = t/n  # 时间步长分割
+        derta_x1 = l1/m1  
+        derta_x2 = l2/m2 
+        derta_x3 = l3/m3 
+        derta_x4 = l4/m4  
+        derta_t = t/n  
 
-        # 计算各层介质剖分的步长比
-        r1 = derta_t/derta_x1**2*a1  # 第I层介质剖分的步长比
-        r2 = derta_t/derta_x2**2*a2  # 第II层介质剖分的步长比
-        r3 = derta_t/derta_x3**2*a3  # 第III层介质剖分的步长比
-        r4 = derta_t/derta_x4**2*a4  # 第IV层介质剖分的步长比
+        r1 = derta_t/derta_x1**2*a1  
+        r2 = derta_t/derta_x2**2*a2  
+        r3 = derta_t/derta_x3**2*a3  
+        r4 = derta_t/derta_x4**2*a4  
 
-        u = np.zeros(shape=(m+1, n+1))  # 定义四层耦合介质温度分布矩阵
+        u = np.zeros(shape=(m+1, n+1)) 
 
-        # 初始条件和边界条件
-        u[:, 0] = body_temperature  # 初始条件
-        u[0, :] = temperature  # 边界条件
+        u[:, 0] = body_temperature  
+        u[0, :] = temperature  
 
-        # 差分格式的系数矩阵的构造
         A = np.zeros(shape=(m, m))
         for i in range(0, m1-1):
             A[i, i] = 1+2*r1
@@ -140,7 +129,6 @@ with SimpleXMLRPCServer(('localhost', 8000), requestHandler=RequestHandler) as s
         A[m-1, m-1] = h+lam_4/derta_x4
         A[m-1, m-2] = -lam_4/derta_x4
 
-    # 构造右端项
         for k in range(1, n+1):
             b = np.zeros(shape=(m, 1))
             for i in range(1, m-1):
@@ -151,7 +139,6 @@ with SimpleXMLRPCServer(('localhost', 8000), requestHandler=RequestHandler) as s
             b[m1+m2+m3-1, 0] = 0
             b[m-1, 0] = 37*h
 
-        # 追赶法求解
             bb = np.diag(A)
 
             aa = np.transpose(np.concatenate([[0], np.diag(A, -1)]))
@@ -184,7 +171,6 @@ with SimpleXMLRPCServer(('localhost', 8000), requestHandler=RequestHandler) as s
 
             for j in range(0, m):
                 u[j+1, k] = x[0, j]
-        # u[1:m,k]=np.transpose(x)
         return float(u[m, n])
 
     server.register_function(get_average_temp, 'get_average_temp')

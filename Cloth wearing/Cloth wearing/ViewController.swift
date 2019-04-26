@@ -38,6 +38,7 @@ class ViewController: NSViewController {
     
     //methods start below:
     
+    
     @IBAction func checkEnough(_ sender: NSButton) {
         
         changeTexture(texture_name: clothTexture1.titleOfSelectedItem!, texture_index: 0)
